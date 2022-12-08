@@ -1,0 +1,43 @@
+.image {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .category {
+    background-color: #387ed9;
+    padding: 0.8em;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.title {
+  color: #303030;
+  font-size: 20px;
+}
+
+.actions {
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(171, 170, 170);
+  }
+
+  a {
+    font-size: 34px;
+    text-decoration: none;
+    color: #303030;
+    cursor: pointer;
+    &:hover {
+      color: rgb(73, 71, 71);
+      transition: 0.3s;
+    }
+  }
+}
+
+.item__animation {
+  animation: cont 2s ease;
+}

@@ -1,0 +1,22 @@
+$blue_dark: #387ed9;
+$blue_light: #7eacd3;
+$blue_mid: #4385c3;
+$light_yellow: #dcbb9d;
+$white: #fff;
+$black: #303030;
+
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 34px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: $blue_light;
+}
+
+button:hover {
+  transition: 0.3s;
+  background-color: $blue_dark;
+}

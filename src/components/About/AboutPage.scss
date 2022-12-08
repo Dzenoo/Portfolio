@@ -1,0 +1,261 @@
+$blue_dark: #387ed9;
+$blue_light: #7eacd3;
+$blue_mid: #4385c3;
+$light_yellow: #dcbb9d;
+$white: #fff;
+$black: #303030;
+
+.about__section {
+  background-image: url("../../assets/BgTransp.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 120px;
+  position: relative;
+  gap: 4rem;
+  padding-bottom: 100px;
+
+  ::selection {
+    background-color: $light_yellow;
+  }
+
+  &::before {
+    content: "";
+    width: 120px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    height: 96px;
+    border-radius: 60px;
+    background-color: $light_yellow;
+    animation: move 3s infinite;
+  }
+
+  .about__content {
+    max-width: 700px;
+    animation: cont 2s ease;
+
+    h1 {
+      font-size: 34pt;
+      color: $white;
+      width: max-content;
+      padding: 10px;
+      border-radius: 60px;
+      overflow-x: hidden;
+    }
+    p {
+      color: $white;
+      font-size: 18pt;
+    }
+
+    .about__hobies {
+      display: flex;
+      gap: 2em;
+      padding-bottom: 20px;
+
+      span {
+        color: $blue_dark;
+        background-color: $light_yellow;
+        font-size: 18pt;
+        padding: 10px;
+        border-radius: 24px;
+      }
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(22rem);
+  }
+
+  30% {
+    transform: translateX(20rem);
+  }
+
+  100% {
+    transform: translateX(22rem);
+  }
+}
+
+.about__img {
+  img {
+    width: 400px;
+    height: auto;
+    border-radius: 24px;
+    animation: showImg 1.3s ease-in;
+  }
+}
+
+@keyframes showImg {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 2;
+  }
+}
+
+.modalDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .socials {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    li {
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        color: $blue_dark;
+      }
+    }
+  }
+
+  span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    color: $blue_dark;
+  }
+
+  .basicInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+
+    li {
+      color: $black;
+    }
+  }
+  .images {
+    max-width: 800px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+  }
+
+  &.dark ul li {
+    color: $black;
+  }
+}
+
+#experience {
+  text-align: center;
+}
+
+.experience__title {
+  font-size: 33pt;
+
+  span {
+    color: $blue_dark;
+  }
+}
+
+body.dark {
+  color: $white;
+}
+
+body.light {
+  color: $black;
+}
+
+.modalDiv .experience__title span {
+  color: $blue_dark;
+}
+
+#experience .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 60px;
+  animation: container 4s ease;
+
+  @keyframes container {
+    0% {
+      transform: translateY(13rem);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .item {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+
+    &:hover {
+      transform: scale(1.12);
+      transition: 0.7s;
+    }
+
+    h1 {
+      color: $blue_dark;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    img {
+      background-color: $blue_dark;
+      border-radius: 34px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #experience .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 574px) {
+  #experience .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 438px) {
+  .about__section .about__content .about__hobies {
+    flex-wrap: wrap;
+  }
+
+  .about__section::before {
+    display: none;
+  }
+  .about__section {
+    padding: 40px;
+    padding-bottom: 88px;
+  }
+
+  .about__img img {
+    width: 293px;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .about__section {
+    padding: 17px;
+  }
+}
