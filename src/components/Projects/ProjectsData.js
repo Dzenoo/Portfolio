@@ -2,7 +2,7 @@ import Bankist from "../../assets/ban.png";
 import SocNet from "../../assets/socnet.png";
 import GuessNum from "../../assets/guessnumber.png";
 import PigGame from "../../assets/pigame.png";
-import Todo from "../../assets/Todo.png";
+import Todo from "../../assets/todo.png";
 import AutoSk from "../../assets/autosksite.png";
 import Grij from "../../assets/heating site.png";
 import ecommerce from "../../assets/ecommerce.png";
