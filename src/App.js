@@ -1,9 +1,12 @@
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+
+import bgv from "./components/assets/bgvideo.mp4";
 import Welcome from "./components/ui/Welcome";
 import Main from "./components/main/Main";
-import "./App.css";
 import Layout from "./components/layout/Layout";
-import { useEffect, useState } from "react";
+
+import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,7 +23,6 @@ function App() {
 
   return (
     <>
-      <div className="cursor"></div>
       <Layout>
         <Routes>
           <Route path="/" element={<Main />} />
