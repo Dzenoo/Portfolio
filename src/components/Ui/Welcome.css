@@ -21,7 +21,7 @@
   }
 }
 
-h1 {
+.wl_text {
   color: #fff;
   font-weight: bold;
   font-family: tahoma;
@@ -35,10 +35,12 @@ h1 {
   padding: 40px;
   margin: 8em auto;
 }
-h1 span {
+
+.wl_text span {
   font-size: 40px;
   margin-left: 40px;
 }
+
 .message {
   background-color: #66f1e1;
   color: #333;
@@ -51,6 +53,7 @@ h1 span {
   left: 270px;
   animation: text 3s ease-in-out infinite;
 }
+
 @keyframes text {
   0% {
     top: 0.2rem;

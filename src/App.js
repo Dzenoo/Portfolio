@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Welcome from "./components/Ui/Welcome";
-import Main from "./components/Main/Main";
-import Navigation from "./components/Layout/Navigation";
+import Welcome from "./components/ui/Welcome";
+import Main from "./components/main/Main";
 import "./App.css";
+import Layout from "./components/layout/Layout";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -19,14 +19,13 @@ function App() {
   }
 
   return (
-    <div>
-      <>
-        <Navigation />
+    <>
+      <Layout>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/main" element={<Main />} />
         </Routes>
-      </>
-    </div>
+      </Layout>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import "./Welcome.css";
 const Welcome = () => {
   return (
     <div className="loading-overlay">
-      <h1>
+      <h1 className="wl_text">
         <div className="message">
           <div className="word1">Hello!</div>
           <div className="word2">Hola!</div>
