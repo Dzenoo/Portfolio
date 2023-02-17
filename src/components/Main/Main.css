@@ -1,3 +1,7 @@
+.main_section {
+  position: relative;
+}
+
 .main_section .text {
   padding: 20px;
 }

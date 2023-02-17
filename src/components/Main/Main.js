@@ -1,10 +1,10 @@
 import React from "react";
 import "./Main.css";
 
-const Main = () => {
-  const helloText = "I'm Dzenis.";
-  const loveText = `I love to build amazing apps.`;
+const helloText = "I'm Dzenis.";
+const loveText = `I love to build amazing apps.`;
 
+const Main = () => {
   return (
     <div className="main_section">
       <div className="text">

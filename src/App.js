@@ -20,9 +20,10 @@ function App() {
 
   return (
     <>
+      <div className="cursor"></div>
       <Layout>
         <Routes>
-          <Route path="/main" element={<Main />} />
+          <Route path="/" element={<Main />} />
         </Routes>
       </Layout>
     </>

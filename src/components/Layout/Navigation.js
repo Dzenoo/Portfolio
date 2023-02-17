@@ -12,7 +12,7 @@ import "./Navigation.css";
 const Navigation = () => {
   return (
     <div className="navigation_sidebar">
-      <Link to="/main">
+      <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
       <p>
@@ -21,25 +21,25 @@ const Navigation = () => {
       </p>
       <ul className="menu">
         <li>
-          <Link to="/main">
+          <Link to="/">
             <AiOutlineHome />
             Home
           </Link>
         </li>
         <li>
-          <Link to="/main">
+          <Link to="/">
             <AiOutlineProject />
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/main">
+          <Link to="/">
             <AiOutlineFileText />
             Contact
           </Link>
         </li>
         <li>
-          <Link to="/main">
+          <Link to="/">
             <IoIosCodeWorking />
             Skills
           </Link>
