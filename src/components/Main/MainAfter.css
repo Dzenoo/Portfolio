@@ -1,6 +1,72 @@
 .about_section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 40vh;
+  padding: 60px;
+}
+
+.about_text {
+  max-width: 800px;
+  animation: textAbout 1.7s;
+}
+
+.about_text h1 {
+  font-size: 4.8em;
+  color: #66f1e1;
+}
+
+.about_text p {
+  word-wrap: break-word;
+  color: #fff;
+  font-size: 18px;
+}
+
+.animate {
+  animation: spanAnimation 1.2s linear;
+}
+
+.about_section .logo_list {
+  max-width: 600px;
+}
+
+.about_section .logo_list img {
+  width: 200px;
+  height: 200px;
+}
+
+.js_logo {
+  transition: 0.3s;
+}
+
+.css_logo {
+  transition: 0.3s;
+}
+
+.html_logo {
+  transition: 0.3s;
+}
+
+.ex_logo {
+  transition: 0.3s;
+}
+
+.node_logo {
+  transition: 0.3s;
+}
+
+.mongo_logo {
+  transition: 0.3s;
+}
+
+.react_logo {
+  transition: 0.3s;
+}
+
+@keyframes textAbout {
+  0% {
+    transform: translateX(-60px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }

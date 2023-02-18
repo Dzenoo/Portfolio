@@ -1,6 +1,6 @@
 .main_section {
   position: relative;
-  height: 70vh;
+  height: 80vh;
 }
 
 .main_section .text {
@@ -12,68 +12,6 @@
   color: #66f1e1;
 }
 
-.text .char {
-  display: inline-block;
-  font-weight: bold;
-  animation: spanAnimation 1.2s ease-out;
-  color: #fff;
-  position: relative;
-}
-.text .char:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.2);
-  cursor: default;
-  animation: bump 1.2s ease-out;
-  color: #66f1e1;
-  font-size: 1em;
-}
-
-@keyframes bump {
-  0% {
-    transform: scale(1);
-  }
-
-  10% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes textAnimation {
-  0% {
-    transform: translateX(40px);
-    opacity: 0;
-  }
-
-  30% {
-    transform: translateY(40px);
-    opacity: 2;
-  }
-
-  60% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes spanAnimation {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 2;
-  }
-}
-
 .text .magician {
   color: #c6c6c6ab;
   font-size: 24px;
@@ -82,19 +20,39 @@
 }
 
 .text button {
-  padding: 1.7em 2em;
+  background-color: transparent;
   border: 1px solid #0ca8ac;
-  margin-top: 30px;
-  background-color: #66f1e1;
-  animation: textAnimation 2s linear;
+  color: #fff;
+  padding: 24px 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
   cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
-.text button:hover {
-  background-color: transparent;
-  transition: all 0.3s ease-in;
-  color: #66f1e1;
-  box-shadow: 0 2px 4px #66f1e1;
+.text button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #66f1e1;
+  transform: scaleX(0);
+  transform-origin: 0 60%;
+  transition: transform 0.2s ease-out;
+}
+
+.text button:hover::before {
+  transform: scaleX(1);
 }
 
 .second_hero {

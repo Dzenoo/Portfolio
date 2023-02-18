@@ -8,3 +8,66 @@ body {
 main {
   margin: 10em;
 }
+
+.char {
+  display: inline-block;
+  font-weight: bold;
+  animation: spanAnimation 1.2s ease-out;
+  color: #fff;
+  position: relative;
+}
+
+.char:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+  cursor: default;
+  animation: bump 1.2s ease-out;
+  color: #66f1e1;
+  font-size: 1em;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(40px);
+    opacity: 2;
+  }
+
+  60% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spanAnimation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 2;
+  }
+}
