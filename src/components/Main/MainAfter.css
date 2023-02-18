@@ -139,7 +139,7 @@
   overflow: hidden;
   width: 400px;
   position: relative;
-  transform: translateY(60px);
+  transform: translateY(100px);
 }
 
 .card::before {

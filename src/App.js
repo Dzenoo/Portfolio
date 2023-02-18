@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import Welcome from "./components/ui/Welcome";
-import Main from "./components/main/Main";
-import Layout from "./components/layout/Layout";
-
+import React, { useEffect, useState } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Suspense } from "react";
 import "./App.css";
+
+import Layout from "./components/layout/Layout";
+const Welcome = React.lazy(() => import("./components/ui/Welcome"));
+const Projects = React.lazy(() => import("./components/projects/Projects"));
+const Contact = React.lazy(() => import("./components/contact/Contact"));
+const Skills = React.lazy(() => import("./components/skills/Skills"));
+const Main = React.lazy(() => import("./components/main/Main"));
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,12 +23,23 @@ function App() {
     return <Welcome />;
   }
 
+  let routes;
+  routes = (
+    <>
+      <Route path="/" element={<Main />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </>
+  );
+
   return (
     <>
       <Layout>
-        <Routes>
-          <Route path="/" element={<Main />} />
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>{routes}</Routes>
+        </Suspense>
       </Layout>
     </>
   );

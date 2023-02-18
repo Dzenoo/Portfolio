@@ -27,19 +27,19 @@ const Navigation = () => {
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/projects">
             <AiOutlineProject />
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/contact">
             <AiOutlineFileText />
             Contact
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/skills">
             <IoIosCodeWorking />
             Skills
           </Link>
