@@ -20,6 +20,40 @@
   font-size: 18px;
 }
 
+.about_text a {
+  background-color: transparent;
+  border: 1px solid #0ca8ac;
+  color: #fff;
+  padding: 24px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.about_text a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0d879f;
+  transform: scaleX(0);
+  transform-origin: 0 60%;
+  transition: transform 0.2s ease-out;
+}
+
+.about_text a:hover::before {
+  transform: scaleX(1);
+}
+
 .animate {
   animation: spanAnimation 1.2s linear;
 }
@@ -69,4 +103,89 @@
   100% {
     transform: translateX(0px);
   }
+}
+
+/* //////////////////////////////////////// */
+/* ///////////////////////////////////// */
+
+.whatdo_section h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  color: #66f1e1;
+}
+
+.whatdo_section p:nth-child(2) {
+  word-wrap: break-word;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.skills_cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+.card {
+  background-color: transparent;
+  border: 1px solid #0ca8ac;
+  box-shadow: 0 5px 15px #0c343b;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 8px;
+  z-index: 2;
+  overflow: hidden;
+  width: 400px;
+  position: relative;
+  transform: translateY(60px);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0d879f;
+  transform: scaleX(0);
+  transform-origin: 0 60%;
+  transition: transform 0.2s ease-out;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card_content {
+  padding: 20px;
+}
+
+.card_content svg {
+  color: #eaeaeb;
+}
+
+.card_content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-color: #66f1e1;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.card_content p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.slide-in-bottom {
+  transform: translateY(0);
+  opacity: 2;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }

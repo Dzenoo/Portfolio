@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./Main.css";
+import React from "react";
 import MainAfter from "./MainAfter";
+import "./Main.css";
 
 const helloText = "I'm Dzenis.";
 const loveText = `I love to build amazing apps.`;

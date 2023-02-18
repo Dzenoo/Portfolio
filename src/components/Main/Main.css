@@ -45,7 +45,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #66f1e1;
+  background-color: #0d879f;
   transform: scaleX(0);
   transform-origin: 0 60%;
   transition: transform 0.2s ease-out;
@@ -78,7 +78,7 @@
   height: 100%;
   background-color: #0ca8ac;
   transform: scale(0.1);
-  box-shadow: 0 0 40px #66f1e1;
+  box-shadow: 0 10px 30px #0effe3;
   transition: 2s;
   border-radius: 30px;
 }

@@ -1,48 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { logos, text1, text2, text3 } from "../helpers/helper";
+import { FaCode, FaLaptopCode, FaPaintBrush } from "react-icons/fa";
+import ScrollTrigger from "react-scroll-trigger";
 import "./MainAfter.css";
 
-import img1 from "../assets/1.png";
-import img2 from "../assets/2.png";
-import img3 from "../assets/3.png";
-import img4 from "../assets/4.png";
-import img5 from "../assets/5.png";
-import img6 from "../assets/6.png";
-import img7 from "../assets/7.png";
-
-const logos = [
-  {
-    image: img3,
-    className: "html_logo",
-  },
-
-  {
-    image: img2,
-    className: "css_logo",
-  },
-  {
-    image: img1,
-    className: "js_logo",
-  },
-  {
-    image: img7,
-    className: "react_logo",
-  },
-
-  {
-    image: img5,
-    className: "node_logo",
-  },
-  {
-    image: img4,
-    className: "ex_logo",
-  },
-  {
-    image: img6,
-    className: "mongo_logo",
-  },
-];
-
 const MainAfter = () => {
+  const [isTriggered, setIsTriggered] = useState(false);
+
+  const onEnterViewport = () => {
+    setIsTriggered(true);
+  };
+
   const logoRefs = useRef([]);
 
   const handleMouseMove = (event, index) => {
@@ -66,20 +35,15 @@ const MainAfter = () => {
         <div className="about_text">
           <h1 className="animate">Full-Stack Wizard</h1>
           <p className="animate">
-            I'm a developer, which means I'm one part magician, one part
-            detective, and one part caffeine addict. Professional
-            procrastinator, but somehow always get the job done.
+            {text1}
             <br />
             <br />
-            As a full-stack MERN developer, I have extensive experience building
-            modern, responsive web applications that are optimized for
-            performance and scalability.
+            {text2}
             <br />
             <br />
-            With a passion for solving complex problems and a deep understanding
-            of the latest web development practices, I bring a wealth of
-            knowledge and expertise to every project I work on.
+            {text3}
           </p>
+          <Link>Let's MERNify your ideas</Link>
         </div>
         <div className="logo_list">
           {logos.map((logo, index) => (
@@ -93,6 +57,49 @@ const MainAfter = () => {
             />
           ))}
         </div>
+      </div>
+
+      <div className="whatdo_section">
+        <h1>What I Can Do</h1>
+        <p>
+          Whether you need a sleek, modern website or a custom web application,
+          I have the skills and experience to make it happen.
+        </p>
+
+        <ScrollTrigger onEnter={onEnterViewport}>
+          <div class="skills_cards">
+            <div className={`card ${isTriggered ? "slide-in-bottom" : ""}`}>
+              <div class="card_content">
+                <FaLaptopCode size={40} />
+                <h3>Frontend Development</h3>
+                <p>
+                  I can create responsive and intuitive user interfaces using
+                  modern web technologies like HTML, CSS, and JavaScript.
+                </p>
+              </div>
+            </div>
+            <div className={`card ${isTriggered ? "slide-in-bottom" : ""}`}>
+              <div class="card_content">
+                <FaCode size={40} />
+                <h3>Backend Development</h3>
+                <p>
+                  I can develop robust and scalable server-side applications
+                  using Node.js and popular frameworks like Express and NestJS.
+                </p>
+              </div>
+            </div>
+            <div className={`card ${isTriggered ? "slide-in-bottom" : ""}`}>
+              <div class="card_content">
+                <FaPaintBrush size={40} />
+                <h3>Design</h3>
+                <p>
+                  I can design beautiful and engaging websites and user
+                  interfaces using tools like Figma.
+                </p>
+              </div>
+            </div>
+          </div>
+        </ScrollTrigger>
       </div>
     </>
   );
