@@ -47,3 +47,14 @@ export const text2 =
 
 export const text3 =
   "With a passion for solving complex problems and a deep understanding of the latest web development practices, I bring a wealth of knowledge and expertise to every project I work on.";
+
+const projects = [
+  {
+    id: 1,
+    image: "../assets/1.png",
+    title: "",
+    description: "",
+    technologies: ["", "", ""],
+    github: "",
+  },
+];

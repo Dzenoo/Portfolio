@@ -9,6 +9,7 @@
   left: 0;
   top: 0;
   bottom: 0;
+  max-width: 90px;
 }
 
 .navigation_sidebar p {
@@ -58,6 +59,7 @@
 
 .icons {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 2em;
   margin-bottom: 60px;

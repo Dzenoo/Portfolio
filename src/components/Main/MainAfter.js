@@ -50,6 +50,7 @@ const MainAfter = () => {
             <img
               key={index}
               src={logo.image}
+              alt="img"
               className={logo.className}
               ref={(el) => (logoRefs.current[index] = el)}
               onMouseMove={(event) => handleMouseMove(event, index)}

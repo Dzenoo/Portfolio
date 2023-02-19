@@ -47,13 +47,14 @@ const Navigation = () => {
       </ul>
 
       <div className="icons">
-        <a href="https://github.com/Dzenoo" target="_blank">
+        <a href="https://github.com/Dzenoo" target="_blank" rel="noreferrer">
           <AiOutlineGithub />
         </a>
 
         <a
           href="https://www.linkedin.com/in/dzenis-gudzevic-41460b244/"
           target="_blank"
+          rel="noreferrer"
         >
           <AiOutlineLinkedin />
         </a>

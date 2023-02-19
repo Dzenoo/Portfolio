@@ -5,8 +5,8 @@ import Navigation from "./Navigation";
 const Layout = ({ children }) => {
   return (
     <Fragment>
-      <Navigation />
       <main>{children}</main>
+      <Navigation />
     </Fragment>
   );
 };
