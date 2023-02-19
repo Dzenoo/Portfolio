@@ -39,18 +39,21 @@ function App() {
 
   return (
     <>
-      {appCtx.isLoading && <Loader />}
-      <Layout>
-        <Suspense
-          fallback={
-            <div>
-              <Loader />
-            </div>
-          }
-        >
-          <Routes>{routes}</Routes>
-        </Suspense>
-      </Layout>
+      {appCtx.isLoading ? (
+        <Loader />
+      ) : (
+        <Layout>
+          <Suspense
+            fallback={
+              <div>
+                <Loader />
+              </div>
+            }
+          >
+            <Routes>{routes}</Routes>
+          </Suspense>
+        </Layout>
+      )}
     </>
   );
 }

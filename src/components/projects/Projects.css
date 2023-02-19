@@ -31,7 +31,7 @@
   padding: 12px;
   height: 0;
   width: fit-content;
-  background-color: #3333335e;
+  background-color: #000000ba;
   backdrop-filter: blur(5px);
   color: #fff;
   display: flex;
@@ -49,11 +49,6 @@
   color: #66f1e1;
 }
 
-.overlay span {
-  font-size: 20px;
-  background-color: #66f1e1;
-}
-
 .overlay .spans {
   display: flex;
   gap: 1.2em;
@@ -61,9 +56,12 @@
 
 .overlay .spans span {
   border-radius: 30px;
-  font-size: 16px;
   padding: 8px;
+  font-size: 13px !important;
   color: #333;
+  font-size: 20px;
+  background-color: #66f1e1;
+  font-weight: bold;
 }
 
 .overlay .spans span:hover {
