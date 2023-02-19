@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineProject } from "react-icons/ai";
@@ -6,13 +6,22 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { IoIosCodeWorking } from "react-icons/io";
 import { AiOutlineFileText } from "react-icons/ai";
+import { AppContext } from "../../context/app-context";
 import logo from "../assets/logo.png";
 import "./Navigation.css";
 
 const Navigation = () => {
+  const appCtx = useContext(AppContext);
+  const { isLoading, setIsLoading } = appCtx;
+
   return (
     <div className="navigation_sidebar">
-      <Link to="/">
+      <Link
+        to="/"
+        onClick={() => {
+          setIsLoading(true);
+        }}
+      >
         <img src={logo} alt="logo" />
       </Link>
       <p>
@@ -21,25 +30,45 @@ const Navigation = () => {
       </p>
       <ul className="menu">
         <li>
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() => {
+              setIsLoading(true);
+            }}
+          >
             <AiOutlineHome />
             Home
           </Link>
         </li>
         <li>
-          <Link to="/projects">
+          <Link
+            to="/projects"
+            onClick={() => {
+              setIsLoading(true);
+            }}
+          >
             <AiOutlineProject />
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/contact">
+          <Link
+            to="/contact"
+            onClick={() => {
+              setIsLoading(true);
+            }}
+          >
             <AiOutlineFileText />
             Contact
           </Link>
         </li>
         <li>
-          <Link to="/skills">
+          <Link
+            to="/skills"
+            onClick={() => {
+              setIsLoading(true);
+            }}
+          >
             <IoIosCodeWorking />
             Skills
           </Link>

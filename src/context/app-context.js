@@ -3,5 +3,21 @@ import * as React from "react";
 export const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
-  return <AppContext.Provider>{children}</AppContext.Provider>;
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isLoading) {
+      const timeoutId = setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isLoading]);
+
+  return (
+    <AppContext.Provider value={{ isLoading, setIsLoading }}>
+      {children}
+    </AppContext.Provider>
+  );
 };

@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Suspense } from "react";
 import "./App.css";
 
 import Layout from "./components/layout/Layout";
 import Loader from "./components/ui/Loader";
+import { AppContext } from "./context/app-context";
 const Welcome = React.lazy(() => import("./components/ui/Welcome"));
 const Projects = React.lazy(() => import("./components/projects/Projects"));
 const Contact = React.lazy(() => import("./components/contact/Contact"));
@@ -13,6 +14,7 @@ const Main = React.lazy(() => import("./components/main/Main"));
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const appCtx = useContext(AppContext);
 
   useEffect(() => {
     setInterval(() => {
@@ -37,6 +39,7 @@ function App() {
 
   return (
     <>
+      {appCtx.isLoading && <Loader />}
       <Layout>
         <Suspense
           fallback={

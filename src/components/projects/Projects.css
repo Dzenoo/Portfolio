@@ -1,45 +1,111 @@
-.project {
+.project_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  animation: showList 0.7s linear;
+}
+
+.project_item {
   position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  animation: slide 10s infinite linear;
+  justify-content: center;
 }
 
-.project:hover {
-  opacity: 0.8;
-}
-
-.project img {
-  width: 100px;
-  height: auto;
+.project_item img {
   object-fit: cover;
+  width: 480px;
 }
 
-.project-overlay {
+.project_item p {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
   position: absolute;
   bottom: 0;
   left: 0;
+  padding: 12px;
   height: 0;
-  background-color: rgba(20, 205, 202, 0.8);
-  color: white;
-  transition: height 0.3s ease-in-out;
+  width: fit-content;
+  background-color: #3333335e;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  flex-direction: column;
+  border-radius: 12px;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease;
 }
 
-.project-overlay h3,
-p {
-  margin: 0 1rem;
+.overlay h3 {
+  font-size: 20px;
+  color: #66f1e1;
 }
 
-p:last-child {
-  margin-bottom: 1rem;
+.overlay span {
+  font-size: 20px;
+  background-color: #66f1e1;
 }
 
-a {
-  display: block;
-  margin: 0 1rem;
-  color: white;
+.overlay .spans {
+  display: flex;
+  gap: 1.2em;
 }
 
-.project:hover .project-overlay {
+.overlay .spans span {
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 8px;
+  color: #333;
+}
+
+.overlay .spans span:hover {
+  transform: scale(1.2);
+  cursor: default;
+  transition: 0.2s;
+}
+
+.project_item:hover .overlay {
   height: 100%;
+  opacity: 1;
+  border: 1px solid #66f1e1;
+}
+
+.github-link {
+  position: absolute;
+  top: -70px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+.project_item:hover .github-link {
+  top: 20px;
+}
+
+.github-link:hover {
+  transition: top 0.3s ease;
+  transform: scale(1.2);
+}
+
+@keyframes showList {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 2;
+  }
 }

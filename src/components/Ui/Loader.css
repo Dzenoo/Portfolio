@@ -1,11 +1,18 @@
 .loader_wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   text-align: center;
   overflow: hidden;
   gap: 1em;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.loader-wrapper.hidden {
+  opacity: 0;
 }
 
 .loader_wrapper .loader {
@@ -15,8 +22,15 @@
   border: none;
   border-top: 4px solid aqua;
   border-bottom: 4px solid aqua;
-
   animation: load 0.6s linear infinite;
+}
+
+.loader_wrapper p {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #66f1e1;
+  z-index: 1;
 }
 
 @keyframes load {
@@ -26,5 +40,14 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
