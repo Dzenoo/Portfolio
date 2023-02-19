@@ -1,0 +1,30 @@
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  gap: 1em;
+}
+
+.loader_wrapper .loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: none;
+  border-top: 4px solid aqua;
+  border-bottom: 4px solid aqua;
+
+  animation: load 0.6s linear infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

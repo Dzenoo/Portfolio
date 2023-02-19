@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import "./App.css";
 
 import Layout from "./components/layout/Layout";
+import Loader from "./components/ui/Loader";
 const Welcome = React.lazy(() => import("./components/ui/Welcome"));
 const Projects = React.lazy(() => import("./components/projects/Projects"));
 const Contact = React.lazy(() => import("./components/contact/Contact"));
@@ -37,7 +38,13 @@ function App() {
   return (
     <>
       <Layout>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <div>
+              <Loader />
+            </div>
+          }
+        >
           <Routes>{routes}</Routes>
         </Suspense>
       </Layout>
