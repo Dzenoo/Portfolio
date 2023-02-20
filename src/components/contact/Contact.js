@@ -1,8 +1,8 @@
 import React from "react";
-
 import { AiOutlineMail } from "react-icons/ai";
-
 import "./Contact.css";
+
+const contactText = "Let's Chat";
 
 const Contact = () => {
   return (
@@ -10,9 +10,20 @@ const Contact = () => {
       <div className="contact_container">
         <div className="contact_text">
           <h1>
-            Let's Chat.
+            {contactText.split(" ").map((word, index) => (
+              <span key={index}>
+                {word.split("").map((char, index) => (
+                  <span key={index} className="char">
+                    {char}
+                  </span>
+                ))}
+                {index < contactText.split(" ").length - 1 && (
+                  <span>&nbsp;</span>
+                )}
+              </span>
+            ))}
             <br />
-            Tell me about your project
+            Tell me about your current project
           </h1>
           <p>
             Interested in working together on a MERN stack project? Reach out
