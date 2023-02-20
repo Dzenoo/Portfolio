@@ -12,83 +12,89 @@ import "./Navigation.css";
 
 const Navigation = () => {
   const appCtx = useContext(AppContext);
-  const { isLoading, setIsLoading } = appCtx;
+  const { setIsLoading, isMenu, setIsMenu } = appCtx;
+
+  const navigationClasses = !isMenu
+    ? "navigation_sidebar show"
+    : "navigation_sidebar hide";
 
   return (
-    <div className="navigation_sidebar">
-      <Link
-        to="/"
-        onClick={() => {
-          setIsLoading(true);
-        }}
-      >
-        <img src={logo} alt="logo" />
-      </Link>
-      <p>
-        Full stack <br />
-        developer
-      </p>
-      <ul className="menu">
-        <li>
-          <Link
-            to="/"
-            onClick={() => {
-              setIsLoading(true);
-            }}
-          >
-            <AiOutlineHome />
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects"
-            onClick={() => {
-              setIsLoading(true);
-            }}
-          >
-            <AiOutlineProject />
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            onClick={() => {
-              setIsLoading(true);
-            }}
-          >
-            <AiOutlineFileText />
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/skills"
-            onClick={() => {
-              setIsLoading(true);
-            }}
-          >
-            <IoIosCodeWorking />
-            Skills
-          </Link>
-        </li>
-      </ul>
-
-      <div className="icons">
-        <a href="https://github.com/Dzenoo" target="_blank" rel="noreferrer">
-          <AiOutlineGithub />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/dzenis-gudzevic-41460b244/"
-          target="_blank"
-          rel="noreferrer"
+    <>
+      <div className={navigationClasses}>
+        <Link
+          to="/"
+          onClick={() => {
+            setIsLoading(true);
+          }}
         >
-          <AiOutlineLinkedin />
-        </a>
+          <img src={logo} alt="logo" />
+        </Link>
+        <p>
+          Full stack <br />
+          developer
+        </p>
+        <ul className="menu">
+          <li>
+            <Link
+              to="/"
+              onClick={() => {
+                setIsLoading(true);
+              }}
+            >
+              <AiOutlineHome />
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              onClick={() => {
+                setIsLoading(true);
+              }}
+            >
+              <AiOutlineProject />
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              onClick={() => {
+                setIsLoading(true);
+              }}
+            >
+              <AiOutlineFileText />
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/skills"
+              onClick={() => {
+                setIsLoading(true);
+              }}
+            >
+              <IoIosCodeWorking />
+              Skills
+            </Link>
+          </li>
+        </ul>
+
+        <div className="icons">
+          <a href="https://github.com/Dzenoo" target="_blank" rel="noreferrer">
+            <AiOutlineGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/dzenis-gudzevic-41460b244/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineLinkedin />
+          </a>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

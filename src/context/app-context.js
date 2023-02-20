@@ -4,6 +4,7 @@ export const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = React.useState(false);
+  const [isMenu, setIsMenu] = React.useState(false);
 
   React.useEffect(() => {
     if (isLoading) {
@@ -16,7 +17,7 @@ export const AppProvider = ({ children }) => {
   }, [isLoading]);
 
   return (
-    <AppContext.Provider value={{ isLoading, setIsLoading }}>
+    <AppContext.Provider value={{ isLoading, setIsLoading, isMenu, setIsMenu }}>
       {children}
     </AppContext.Provider>
   );

@@ -9,7 +9,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  max-width: 90px;
+  width: 90px;
 }
 
 .navigation_sidebar p {
@@ -74,4 +74,47 @@
   color: #66f1e1;
   transition: 0.3s;
   transform: scale(1.3);
+}
+
+.open_menu_btn {
+  display: none;
+  padding: 60px;
+  position: absolute;
+  top: 0;
+  z-index: 40;
+}
+
+.navigation_sidebar.show {
+  opacity: 2;
+  transition: 0.2s;
+  width: 100%;
+  z-index: 20;
+  overflow: auto;
+}
+
+.navigation_sidebar.hide {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .open_menu_btn {
+    display: block;
+  }
+
+  .menu li a svg {
+    font-size: 40px;
+  }
+
+  .navigation_sidebar p {
+    font-size: 30px;
+  }
+
+  .navigation_sidebar img {
+    width: 200px;
+  }
+
+  .icons a {
+    font-size: 34px;
+  }
 }

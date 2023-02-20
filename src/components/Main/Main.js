@@ -1,6 +1,7 @@
 import React from "react";
 import MainAfter from "./MainAfter";
 import "./Main.css";
+import { Link } from "react-router-dom";
 
 const helloText = "I'm Dzenis.";
 const loveText = `I love to build amazing apps.`;
@@ -54,7 +55,9 @@ const Main = () => {
           <p className="magician">
             MERN Stack Magician: Crafting Powerful Web Applications
           </p>
-          <button>Contact me!</button>
+          <Link to="/contact">
+            <button>Contact me!</button>
+          </Link>
         </div>
         <div className="second_hero">{spanArray}</div>
       </div>

@@ -1,16 +1,15 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Suspense } from "react";
+import { AppContext } from "./context/app-context";
 import "./App.css";
 
 import Layout from "./components/layout/Layout";
 import Loader from "./components/ui/Loader";
-import { AppContext } from "./context/app-context";
-const Welcome = React.lazy(() => import("./components/ui/Welcome"));
-const Projects = React.lazy(() => import("./components/projects/Projects"));
-const Contact = React.lazy(() => import("./components/contact/Contact"));
-const Skills = React.lazy(() => import("./components/skills/Skills"));
-const Main = React.lazy(() => import("./components/main/Main"));
+import Welcome from "./components/ui/Welcome";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Skills from "./components/skills/Skills";
+import Main from "./components/main/Main";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -43,15 +42,13 @@ function App() {
         <Loader />
       ) : (
         <Layout>
-          <Suspense
-            fallback={
-              <div>
-                <Loader />
-              </div>
-            }
+          <button
+            className="open_menu_btn"
+            onClick={() => appCtx.setIsMenu((prevState) => !prevState)}
           >
-            <Routes>{routes}</Routes>
-          </Suspense>
+            Open menu
+          </button>
+          <Routes>{routes}</Routes>
         </Layout>
       )}
     </>

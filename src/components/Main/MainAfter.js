@@ -43,7 +43,7 @@ const MainAfter = () => {
             <br />
             {text3}
           </p>
-          <Link>Let's MERNify your ideas</Link>
+          <Link to="/contact">Let's MERNify your ideas</Link>
         </div>
         <div className="logo_list">
           {logos.map((logo, index) => (

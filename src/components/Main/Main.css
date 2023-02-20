@@ -114,3 +114,13 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 893px) {
+  .main_section .text h1 {
+    font-size: 3.8rem;
+  }
+
+  main {
+    margin: 7em;
+  }
+}
