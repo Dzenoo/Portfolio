@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { AppContext } from "./context/app-context";
+import { AiOutlineMenu } from "react-icons/ai";
 import "./App.css";
 
 import Layout from "./components/layout/Layout";
@@ -46,7 +47,7 @@ function App() {
             className="open_menu_btn"
             onClick={() => appCtx.setIsMenu((prevState) => !prevState)}
           >
-            Open menu
+            <AiOutlineMenu />
           </button>
           <Routes>{routes}</Routes>
         </Layout>

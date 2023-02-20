@@ -6,7 +6,7 @@ const contactText = "Let's Chat";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <div className="contact_container">
         <div className="contact_text">
           <h1>
@@ -54,7 +54,7 @@ const Contact = () => {
           <button className="send_button">Send</button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

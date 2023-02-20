@@ -1,6 +1,8 @@
 .main_section {
   position: relative;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main_section .text {
@@ -122,5 +124,54 @@
 
   main {
     margin: 7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_section {
+    position: relative;
+    height: 108vh;
+  }
+
+  .scroll {
+    right: 0;
+    top: -60px;
+  }
+}
+@media (max-width: 425px) {
+  /* .second_hero {
+    display: none;
+  } */
+
+  .about_section .logo_list {
+    max-width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_section .logo_list img {
+    width: 130px;
+    height: 130px;
+  }
+  main {
+    margin: 2em;
+  }
+  .about_text h1 {
+    font-size: 3.8em;
+  }
+  .main_section .text h1 {
+    font-size: 2.8rem;
+  }
+  .scroll {
+    right: -80px;
+    top: 30px;
+  }
+  .main_section {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .main_section {
+    height: 130vh;
   }
 }

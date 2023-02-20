@@ -12,7 +12,7 @@ import "./Navigation.css";
 
 const Navigation = () => {
   const appCtx = useContext(AppContext);
-  const { setIsLoading, isMenu, setIsMenu } = appCtx;
+  const { setIsLoading, isMenu } = appCtx;
 
   const navigationClasses = !isMenu
     ? "navigation_sidebar show"
