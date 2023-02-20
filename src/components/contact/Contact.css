@@ -1,16 +1,16 @@
 .contact_container {
   display: flex;
   justify-content: space-around;
-  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .contact_text {
-  max-width: 600px;
+  max-width: 660px;
+  animation: contactText 1.2s linear;
 }
 
 .contact_text h1 {
-  font-size: 3.8em;
+  font-size: 3.3em;
   color: #66f1e1;
 }
 
@@ -21,21 +21,26 @@
 }
 
 .contact_form {
-  max-width: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
+  max-width: 600px;
   gap: 20px;
+  background-color: #1d1d1d;
+  padding: 20px;
+  border-radius: 12px;
+  animation: contact 1.3s linear;
+}
+
+.contact_form h1 {
+  color: #ffff;
 }
 
 .contact_form .form_control {
   position: relative;
-  width: 250px;
 }
 
 .contact_form .form_control input {
-  width: 100%;
   padding: 1.2em;
   border: 1px solid #131313;
   background-color: rgba(0, 0, 0, 0.2);
@@ -54,7 +59,6 @@
   padding: 10px;
   pointer-events: none;
   font-size: 1em;
-  text-transform: uppercase;
   color: gray;
   transition: 0.6s;
 }
@@ -70,14 +74,19 @@
   border-right: 1px solid aqua;
 }
 
+.contact_form .form_control input:valid,
+.contact_form .form_control input:focus {
+  border: 1px solid #0cdde4;
+}
+
 .contact_form textarea {
-  width: 100%;
+  width: -webkit-fill-available;
   font-size: 1.1rem;
-  border: none;
+  border: 1px solid #0cdde4;
   background-color: rgba(0, 0, 0, 0.2);
   resize: vertical;
   color: #fff;
-  max-height: 400px;
+  max-height: 300px;
   padding: 20px;
 }
 
@@ -118,5 +127,47 @@
 }
 .flex {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
   gap: 20px;
+  padding: 40px;
+}
+
+.mail span {
+  background-color: #c6c6c6;
+  border-radius: 12px;
+  padding: 20px;
+  color: #131313;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mail .mail_se {
+  color: #0cdde4;
+  background-color: transparent;
+}
+
+@keyframes contact {
+  0% {
+    transform: translateX(80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes contactText {
+  0% {
+    transform: translateX(-80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
