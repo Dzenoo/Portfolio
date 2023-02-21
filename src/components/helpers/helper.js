@@ -108,24 +108,24 @@ export const projects = [
     technologies: ["JavaScript", "Html", "Css"],
     github: "https://github.com/Dzenoo/Social-Network",
   },
-  {
-    id: 8,
-    image: PigGameApp,
-    title: "Pig Game",
-    description:
-      "Pig game is a fun and easy-to-learn dice game where players take turns rolling the dice and accumulating points",
-    technologies: ["JavaScript", "Html", "Css"],
-    github: "https://github.com/Dzenoo/Pig-Game",
-  },
-  {
-    id: 9,
-    image: GuessNumberApp,
-    title: "Guess Number Game",
-    description:
-      "It's a classic game where one player thinks of a number between a chosen range and the other player has to guess what the number is. ",
-    technologies: ["JavaScript", "Html", "Css"],
-    github: "https://github.com/Dzenoo/Guess-number",
-  },
+  // {
+  //   id: 8,
+  //   image: PigGameApp,
+  //   title: "Pig Game",
+  //   description:
+  //     "Pig game is a fun and easy-to-learn dice game where players take turns rolling the dice and accumulating points",
+  //   technologies: ["JavaScript", "Html", "Css"],
+  //   github: "https://github.com/Dzenoo/Pig-Game",
+  // },
+  // {
+  //   id: 9,
+  //   image: GuessNumberApp,
+  //   title: "Guess Number Game",
+  //   description:
+  //     "It's a classic game where one player thinks of a number between a chosen range and the other player has to guess what the number is. ",
+  //   technologies: ["JavaScript", "Html", "Css"],
+  //   github: "https://github.com/Dzenoo/Guess-number",
+  // },
   {
     id: 10,
     image: CalculatorApp,

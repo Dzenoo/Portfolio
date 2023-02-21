@@ -139,16 +139,12 @@
   }
 }
 @media (max-width: 425px) {
-  /* .second_hero {
-    display: none;
-  } */
-
   .about_section .logo_list {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .about_section .logo_list img {
-    width: 130px;
+    width: 115px;
     height: 130px;
   }
   main {
@@ -172,5 +168,14 @@
 @media (max-width: 375px) {
   .main_section {
     height: 130vh;
+  }
+}
+
+@media (max-width: 325px) {
+  .about_section .logo_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main_section {
+    height: 142vh;
   }
 }
