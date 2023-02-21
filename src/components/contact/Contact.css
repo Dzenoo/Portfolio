@@ -18,6 +18,7 @@
   word-wrap: break-word;
   color: #fff;
   font-size: 18px;
+  padding: 10px;
 }
 
 .contact_form {
@@ -129,6 +130,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2em;
 }
 
@@ -169,5 +171,17 @@
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 375px) {
+  .contact_text {
+    max-width: 300px;
+  }
+  .mail .mail_se {
+    font-size: 13px;
+  }
+  .mail span {
+    padding: 8px;
   }
 }

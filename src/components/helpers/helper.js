@@ -6,13 +6,12 @@ import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
 import img7 from "../assets/7.png";
 
-import AuthApp from "../assets/Auth.png";
 import AutoApp from "../assets/autosksite.png";
 import BlogApp from "../assets/blog.png";
 import CalculatorApp from "../assets/Calculator.png";
 import EcommerceNextApp from "../assets/ecommerce.png";
 import EcommerceApp from "../assets/ecoomerce.png";
-import EcerciseApp from "../assets/exercise.png";
+import SocNetwork from "../assets/socnet.png";
 import ExpensesApp from "../assets/exp.png";
 import FoodOrderApp from "../assets/foodorder.png";
 import GuessNumberApp from "../assets/guessnumber.png";
@@ -21,7 +20,6 @@ import PigGameApp from "../assets/pigame.png";
 import PlacesApp from "../assets/places.png";
 import SocialMediaApp from "../assets/scm.png";
 import SocialNetworkApp from "../assets/socnet.png";
-import TodoApp from "../assets/todo.png";
 import YtApp from "../assets/ytu.png";
 
 export const logos = [
@@ -92,16 +90,6 @@ export const projects = [
     technologies: ["React Js", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/MERN-application",
   },
-
-  {
-    id: 4,
-    image: PlacesApp,
-    title: "Social Media Application",
-    description:
-      "A social media todo application, build with MERN. It's application where users can create and share todos. Features include authentication, editing and deleting todo, see other todos and view profile",
-    technologies: ["React Js", "Node Js", "MongoDB"],
-    github: "https://github.com/Dzenoo/MERN-application",
-  },
   {
     id: 5,
     image: FoodOrderApp,
@@ -119,15 +107,6 @@ export const projects = [
       "Social Network application, build with vanilla Js, API, and with features: Comments, Likes, Posts, Authentication",
     technologies: ["JavaScript", "Html", "Css"],
     github: "https://github.com/Dzenoo/Social-Network",
-  },
-  {
-    id: 7,
-    image: TodoApp,
-    title: "Todo Application",
-    description:
-      "A Todo React app is a web application that allows users to create, manage, and organize tasks or to-do lists. ",
-    technologies: ["React Js", "Css"],
-    github: "https://github.com/Dzenoo/React-Todo",
   },
   {
     id: 8,
@@ -165,15 +144,7 @@ export const projects = [
     technologies: ["JavaScript", "Html", "Css"],
     github: "https://github.com/Dzenoo/Arizona2018",
   },
-  {
-    id: 12,
-    image: AuthApp,
-    title: "Authentication Application",
-    description:
-      "I used React on the front-end to create a seamless and intuitive user interface. The app also employs JWT (JSON Web Tokens) for authentication and has password hashing and salting for added security.",
-    technologies: ["React Js", "Css", "JWT"],
-    github: "https://github.com/Dzenoo/React_Authentication_App",
-  },
+
   {
     id: 13,
     image: BlogApp,
@@ -192,15 +163,7 @@ export const projects = [
     technologies: ["React Js", "Css"],
     github: "https://github.com/Dzenoo/Expenses-app",
   },
-  {
-    id: 15,
-    image: EcerciseApp,
-    title: "Exercise Tracker Application",
-    description:
-      "A software application designed to help users track their fitness progress. It typically includes features for creating and tracking exercise routines",
-    technologies: ["React Js", "Css"],
-    github: "https://github.com/Dzenoo/Exercises-tracker-app",
-  },
+
   {
     id: 16,
     image: YtApp,

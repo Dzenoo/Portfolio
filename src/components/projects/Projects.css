@@ -17,6 +17,7 @@
 .project_item img {
   object-fit: cover;
   width: 480px;
+  height: 400px;
 }
 
 .project_item p {
@@ -31,7 +32,7 @@
   padding: 12px;
   height: 0;
   width: fit-content;
-  background-color: #000000e7;
+  background: linear-gradient(to top, #121212, rgba(0, 255, 255, 0.267));
   backdrop-filter: blur(5px);
   color: #fff;
   display: flex;
@@ -105,5 +106,16 @@
   100% {
     transform: translateY(0px);
     opacity: 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .project_list {
+    margin-top: 100px;
+  }
+
+  .project_item img {
+    width: 100%;
+    height: auto;
   }
 }

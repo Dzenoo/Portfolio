@@ -29,7 +29,6 @@ const Contact = () => {
             Interested in working together on a MERN stack project? Reach out
             and let's discuss how we can collaborate.
           </p>
-          <p>Let's create something </p>
           <p className="mail">
             <span>
               <AiOutlineMail />

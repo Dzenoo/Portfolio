@@ -1,14 +1,14 @@
-.transition-overlay {
+.loading-overlay {
   position: fixed;
-  top: -0;
+  top: 0;
   bottom: 0;
   left: 0;
-  width: 100vw;
   background: #041e29;
-  animation: overlay-fade-out 8s ease-out;
+  animation: overlay-fade-out 1.2s ease-out;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 @keyframes overlay-fade-out {
@@ -33,12 +33,6 @@
   position: relative;
   width: 600px;
   padding: 40px;
-  margin: 8em auto;
-}
-
-.wl_text span {
-  font-size: 40px;
-  margin-left: 40px;
 }
 
 .message {
@@ -115,5 +109,11 @@
     top: 0;
     width: 0;
     text-indent: 0;
+  }
+}
+
+@media (max-width: 543px) {
+  .message {
+    margin-right: 340px !important;
   }
 }

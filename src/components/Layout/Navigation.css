@@ -28,7 +28,6 @@
   align-items: center;
   list-style: none;
   padding: 20px;
-  margin-bottom: 160px;
   gap: 2em;
 }
 
@@ -92,7 +91,7 @@
 
 .navigation_sidebar.show {
   opacity: 2;
-  display: block;
+  display: flex;
   transition: 0.2s;
   z-index: 20;
   overflow: auto;
