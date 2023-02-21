@@ -1,10 +1,13 @@
 .skills_section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.skills_section .skill_text {
+  max-width: 800px;
 }
 
 .skills_section .skill_text h1 {
@@ -42,4 +45,116 @@
 
 .skills_section .skill_text .lnk:hover::before {
   width: 100%;
+}
+
+/* //////////////////////// */
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.skills_container p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.container {
+  width: 600px;
+  background-color: rgb(47, 47, 47);
+  transition: 0.3s;
+}
+
+.skills {
+  border-radius: 8px;
+  padding-top: 3px;
+  transition: 0.3s;
+  color: white;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.front {
+  width: 78%;
+  background-color: rgb(236, 67, 67);
+}
+
+.react {
+  width: 65%;
+  background-color: aqua;
+}
+.back {
+  width: 45%;
+  background-color: #2196f3;
+}
+
+.node {
+  width: 49%;
+  background-color: #67ea60;
+}
+
+.certificates {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.cart_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px aqua;
+}
+
+.card_front {
+  backface-visibility: hidden;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.card_front h3 {
+  color: aqua;
+  font-size: 28px;
+}
+.card_front span {
+  color: #fff;
+  font-size: 18px;
+}
+.card_front p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.card_backend {
+  backface-visibility: hidden;
+  background: blue;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.card_backend img {
+  width: 100%;
+  aspect-ratio: 1.2 / 1.2;
+}
+
+.cart_card:hover {
+  transform: rotateY(180deg);
 }
