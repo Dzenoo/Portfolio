@@ -144,8 +144,7 @@
   } */
 
   .about_section .logo_list {
-    max-width: 300px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .about_section .logo_list img {
