@@ -32,7 +32,7 @@
   padding: 12px;
   height: 0;
   width: fit-content;
-  background: linear-gradient(to top, #121212, rgba(0, 255, 255, 0.267));
+  background: linear-gradient(to top, #000000, rgba(0, 255, 255, 0.267));
   backdrop-filter: blur(5px);
   color: #fff;
   display: flex;

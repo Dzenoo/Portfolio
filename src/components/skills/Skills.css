@@ -4,9 +4,11 @@
   align-items: flex-start;
   overflow: hidden;
   flex-wrap: wrap;
+  gap: 6em;
 }
 
 .skills_section .skill_text {
+  animation: spanAnimation 2s;
   max-width: 800px;
 }
 
@@ -38,7 +40,7 @@
   position: absolute;
   top: 20px;
   width: 0;
-  height: 20px;
+  height: 2px;
   background-color: aqua;
   transition: 0.4s;
 }
@@ -53,6 +55,7 @@
   display: flex;
   flex-direction: column;
   gap: 3em;
+  animation: spanAnimation 2s;
 }
 
 .skills_container p {
@@ -61,7 +64,7 @@
 }
 
 .container {
-  width: 600px;
+  width: 100%;
   background-color: rgb(47, 47, 47);
   transition: 0.3s;
 }
@@ -157,4 +160,10 @@
 
 .cart_card:hover {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 425px) {
+  .skills_section .skill_text h1 {
+    font-size: 2.8em;
+  }
 }

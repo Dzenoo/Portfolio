@@ -37,7 +37,7 @@ const Skills = () => {
 
         <div className="skills_container">
           <div className="bar">
-            <p>Front-end</p>
+            <p>Frontend</p>
             <div class="container">
               <div class="skills front"></div>
             </div>
@@ -47,7 +47,7 @@ const Skills = () => {
               <div class="skills react"></div>
             </div>
 
-            <p>Back-end</p>
+            <p>Backend</p>
             <div class="container">
               <div class="skills back"></div>
             </div>
