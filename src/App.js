@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { AppContext } from "./context/app-context";
 import { AiOutlineMenu } from "react-icons/ai";
 import "./App.css";
+import ReactGa from "react-ga";
 
 import Layout from "./components/Layout/Layout";
 import Loader from "./components/Ui/Loader";
@@ -20,6 +21,12 @@ function App() {
     setInterval(() => {
       setLoading(false);
     }, 3000);
+  }, []);
+
+  useEffect(() => {
+    ReactGa.initialize("G-KR4KTMDBDS");
+
+    ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
 
   if (loading) {
