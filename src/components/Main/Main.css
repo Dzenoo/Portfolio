@@ -144,7 +144,7 @@
   }
 
   .about_section .logo_list img {
-    width: 115px;
+    width: 106px;
     height: 130px;
   }
   main {
@@ -167,15 +167,12 @@
 
 @media (max-width: 375px) {
   .main_section {
-    height: 130vh;
+    height: 142vh;
   }
 }
 
 @media (max-width: 325px) {
   .about_section .logo_list {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .main_section {
-    height: 142vh;
   }
 }
