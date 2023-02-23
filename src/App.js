@@ -4,13 +4,13 @@ import { AppContext } from "./context/app-context";
 import { AiOutlineMenu } from "react-icons/ai";
 import "./App.css";
 
-import Layout from "./components/layout/Layout";
-import Loader from "./components/ui/Loader";
-import Welcome from "./components/ui/Welcome";
+import Layout from "./components/Layout/Layout";
+import Loader from "./components/Ui/Loader";
+import Welcome from "./components/Ui/Welcome";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Skills from "./components/skills/Skills";
-import Main from "./components/main/Main";
+import Main from "./components/Main/Main";
 
 function App() {
   const [loading, setLoading] = useState(true);
