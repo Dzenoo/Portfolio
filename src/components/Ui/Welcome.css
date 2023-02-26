@@ -113,7 +113,11 @@
 }
 
 @media (max-width: 543px) {
-  .message {
-    margin-right: 340px !important;
+  .wl_text {
+    right: 170px;
+  }
+
+  .loading-overlay {
+    width: 138%;
   }
 }

@@ -144,7 +144,7 @@
   }
 
   .about_section .logo_list img {
-    width: 106px;
+    width: 112px;
     height: 130px;
   }
   main {
@@ -174,5 +174,21 @@
 @media (max-width: 325px) {
   .about_section .logo_list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .main_section {
+    height: 60vh;
+  }
+  .main_section .text h1 {
+    font-size: 27px;
+  }
+
+  .second_hero {
+    display: none;
+  }
+  .about_text h1 {
+    font-size: 1.8em;
   }
 }
