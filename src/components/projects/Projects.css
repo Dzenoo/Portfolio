@@ -88,11 +88,33 @@
   height: 40px;
   transition: all 0.3s ease;
 }
+
 .project_item:hover .github-link {
   top: 20px;
 }
 
 .github-link:hover {
+  transition: top 0.3s ease;
+  transform: scale(1.2);
+}
+
+.site-link {
+  position: absolute;
+  top: -70px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.project_item:hover .site-link {
+  top: 20px;
+}
+
+.site-link:hover {
   transition: top 0.3s ease;
   transform: scale(1.2);
 }

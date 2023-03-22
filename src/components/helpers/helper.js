@@ -98,6 +98,7 @@ export const projects = [
       "A modern and fully responsive react application for food order.Beautiful UI design and best practices about functionality",
     technologies: ["React Js", "Css", "MongoDB"],
     github: "https://github.com/Dzenoo/Food-order-app",
+    site: "https://food-order-app-omega-wheat.vercel.app/",
   },
   {
     id: 6,
@@ -134,6 +135,7 @@ export const projects = [
       "A calculator app is a software application designed to perform mathematical calculations.",
     technologies: ["React Js", "Css"],
     github: "https://github.com/Dzenoo/Calculator_React",
+    site: "https://calculator-react-orcin.vercel.app/",
   },
   {
     id: 11,
@@ -143,6 +145,7 @@ export const projects = [
       "A website for a driving school that provides information about the courses they offer, pricing, scheduling, and the ability to book lessons",
     technologies: ["JavaScript", "Html", "Css"],
     github: "https://github.com/Dzenoo/Arizona2018",
+    site: "https://arizona2018.com/",
   },
 
   {
@@ -153,6 +156,7 @@ export const projects = [
       "A software application that allows users to read, and share blog posts. It typically includes a user interface for reading posts,",
     technologies: ["Next Js", "MongoDB"],
     github: "https://github.com/Dzenoo/Blog-app",
+    site: "https://www.monetizenp.com/",
   },
   {
     id: 14,
@@ -162,6 +166,7 @@ export const projects = [
       "A software application that allows users to track their expenses and income. It typically includes features for creating and categorizing transactions and generating reports.",
     technologies: ["React Js", "Css"],
     github: "https://github.com/Dzenoo/Expenses-app",
+    site: "https://expenses-7sdxftso0-dzenoo.vercel.app/",
   },
 
   {
@@ -181,6 +186,7 @@ export const projects = [
       "A website or app that emulates the functionality of Netflix, allowing users to stream movies and TV shows",
     technologies: ["React Js", "Sass"],
     github: "https://github.com/Dzenoo/Netflix-clone-react",
+    site: "https://netflix-clone-react-pi.vercel.app/",
   },
   {
     id: 18,
