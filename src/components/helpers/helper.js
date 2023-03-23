@@ -11,7 +11,7 @@ import BlogApp from "../assets/blog.png";
 import CalculatorApp from "../assets/Calculator.png";
 import EcommerceNextApp from "../assets/ecommerce.png";
 import EcommerceApp from "../assets/ecoomerce.png";
-import SocNetwork from "../assets/socnet.png";
+import Prl from "../assets/prl.png";
 import ExpensesApp from "../assets/exp.png";
 import FoodOrderApp from "../assets/foodorder.png";
 import GuessNumberApp from "../assets/guessnumber.png";
@@ -109,15 +109,16 @@ export const projects = [
     technologies: ["JavaScript", "Html", "Css"],
     github: "https://github.com/Dzenoo/Social-Network",
   },
-  // {
-  //   id: 8,
-  //   image: PigGameApp,
-  //   title: "Pig Game",
-  //   description:
-  //     "Pig game is a fun and easy-to-learn dice game where players take turns rolling the dice and accumulating points",
-  //   technologies: ["JavaScript", "Html", "Css"],
-  //   github: "https://github.com/Dzenoo/Pig-Game",
-  // },
+  {
+    id: 8,
+    image: Prl,
+    title: "Pig Game",
+    description:
+      "Programming Learning Application, that provides much features. Browsing challenges, earn xp, and level up. Get more achievements and get first on leaderboard.",
+    technologies: ["React", "Node", "Express", "MongoDB"],
+    github: "https://github.com/Dzenoo/Programming-Learning-Platform",
+    site: "https://programming-learning-platform.vercel.app/home",
+  },
   // {
   //   id: 9,
   //   image: GuessNumberApp,
