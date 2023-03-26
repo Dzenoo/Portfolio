@@ -15,8 +15,8 @@ const Navigation = () => {
   const { setIsLoading, isMenu } = appCtx;
 
   const navigationClasses = !isMenu
-    ? "navigation_sidebar show"
-    : "navigation_sidebar hide";
+    ? "navigation_sidebar hide"
+    : "navigation_sidebar show";
 
   return (
     <>
