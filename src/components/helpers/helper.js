@@ -112,7 +112,7 @@ export const projects = [
   {
     id: 8,
     image: Prl,
-    title: "Pig Game",
+    title: "Programming Learning Application",
     description:
       "Programming Learning Application, that provides much features. Browsing challenges, earn xp, and level up. Get more achievements and get first on leaderboard.",
     technologies: ["React", "Node", "Express", "MongoDB"],
