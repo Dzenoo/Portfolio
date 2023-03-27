@@ -71,6 +71,7 @@ export const projects = [
       "This is a MERN ecommerce app to sell products and services online, with Admin Dashboard, providing a seamless shopping experience for customers and enabling businesses to manage orders, inventory, and shipping.",
     technologies: ["React Js", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/React-Ecommerce",
+    site: "https://ecommerce-react-dun.vercel.app/",
   },
   {
     id: 2,
