@@ -18,7 +18,6 @@ import GuessNumberApp from "../assets/guessnumber.png";
 import NetflixApp from "../assets/netlfixcl.png";
 import PigGameApp from "../assets/pigame.png";
 import PlacesApp from "../assets/places.png";
-import SocialMediaApp from "../assets/scm.png";
 import SocialNetworkApp from "../assets/socnet.png";
 import YtApp from "../assets/ytu.png";
 
@@ -189,14 +188,5 @@ export const projects = [
     technologies: ["React Js", "Sass"],
     github: "https://github.com/Dzenoo/Netflix-clone-react",
     site: "https://netflix-clone-react-pi.vercel.app/",
-  },
-  {
-    id: 18,
-    image: SocialMediaApp,
-    title: "Social Todos Application",
-    description:
-      "A social media todo application, build with MERN. It's application where users can create and share todos. Features include authentication, editing and deleting todo, see other todos and view profile",
-    technologies: ["React Js", "Node Js", "MongoDB"],
-    github: "https://github.com/Dzenoo/MERN-social-media",
   },
 ];
