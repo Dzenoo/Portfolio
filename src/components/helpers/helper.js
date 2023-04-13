@@ -18,11 +18,8 @@ import GuessNumberApp from "../assets/guessnumber.png";
 import NetflixApp from "../assets/netlfixcl.png";
 import PigGameApp from "../assets/pigame.png";
 import PlacesApp from "../assets/places.png";
-<<<<<<< HEAD
 import Job from "../assets/job.png";
 import SocialMediaApp from "../assets/scm.png";
-=======
->>>>>>> 8f2e9c432ae61f27ed7231a51cc1ba4e8a796457
 import SocialNetworkApp from "../assets/socnet.png";
 import YtApp from "../assets/ytu.png";
 
