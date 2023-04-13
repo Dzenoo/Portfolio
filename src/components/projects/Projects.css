@@ -141,3 +141,13 @@
     height: auto;
   }
 }
+
+@media (max-width: 425px) {
+  .project_item {
+    height: 20em;
+  }
+  .project_item img {
+    width: 100%;
+    height: 100%;
+  }
+}

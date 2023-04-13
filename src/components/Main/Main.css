@@ -117,6 +117,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .second_hero {
+    /* display: none; */
+  }
+}
+
 @media (max-width: 893px) {
   .main_section .text h1 {
     font-size: 3.8rem;
