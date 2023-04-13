@@ -18,8 +18,11 @@ import GuessNumberApp from "../assets/guessnumber.png";
 import NetflixApp from "../assets/netlfixcl.png";
 import PigGameApp from "../assets/pigame.png";
 import PlacesApp from "../assets/places.png";
+<<<<<<< HEAD
 import Job from "../assets/job.png";
 import SocialMediaApp from "../assets/scm.png";
+=======
+>>>>>>> 8f2e9c432ae61f27ed7231a51cc1ba4e8a796457
 import SocialNetworkApp from "../assets/socnet.png";
 import YtApp from "../assets/ytu.png";
 
@@ -72,6 +75,7 @@ export const projects = [
       "This is a MERN ecommerce app to sell products and services online, with Admin Dashboard, providing a seamless shopping experience for customers and enabling businesses to manage orders, inventory, and shipping.",
     technologies: ["React Js", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/React-Ecommerce",
+    site: "https://ecommerce-react-dun.vercel.app/",
   },
   {
     id: 24,
@@ -123,7 +127,7 @@ export const projects = [
   {
     id: 8,
     image: Prl,
-    title: "Pig Game",
+    title: "Programming Learning Application",
     description:
       "Programming Learning Application, that provides much features. Browsing challenges, earn xp, and level up. Get more achievements and get first on leaderboard.",
     technologies: ["React", "Node", "Express", "MongoDB"],
@@ -199,14 +203,5 @@ export const projects = [
     technologies: ["React Js", "Sass"],
     github: "https://github.com/Dzenoo/Netflix-clone-react",
     site: "https://netflix-clone-react-pi.vercel.app/",
-  },
-  {
-    id: 18,
-    image: SocialMediaApp,
-    title: "Social Todos Application",
-    description:
-      "A social media todo application, build with MERN. It's application where users can create and share todos. Features include authentication, editing and deleting todo, see other todos and view profile",
-    technologies: ["React Js", "Node Js", "MongoDB"],
-    github: "https://github.com/Dzenoo/MERN-social-media",
   },
 ];
