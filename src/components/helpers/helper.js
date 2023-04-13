@@ -18,6 +18,7 @@ import GuessNumberApp from "../assets/guessnumber.png";
 import NetflixApp from "../assets/netlfixcl.png";
 import PigGameApp from "../assets/pigame.png";
 import PlacesApp from "../assets/places.png";
+import Job from "../assets/job.png";
 import SocialMediaApp from "../assets/scm.png";
 import SocialNetworkApp from "../assets/socnet.png";
 import YtApp from "../assets/ytu.png";
@@ -71,6 +72,16 @@ export const projects = [
       "This is a MERN ecommerce app to sell products and services online, with Admin Dashboard, providing a seamless shopping experience for customers and enabling businesses to manage orders, inventory, and shipping.",
     technologies: ["React Js", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/React-Ecommerce",
+  },
+  {
+    id: 24,
+    image: Job,
+    title: "Job Search Application",
+    description:
+      "About This project is a job searching and hiring application that connects job seekers with employers. It provides a platform for job seekers to browse job listings, apply for positions, and manage their job applications.",
+    technologies: ["React Js", "Node Js", "MongoDB", "Express Js"],
+    github: "https://github.com/Dzenoo/Job-Searching-App",
+    site: "https://job-searching-app-omega.vercel.app/",
   },
   {
     id: 2,
