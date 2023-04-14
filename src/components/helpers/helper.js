@@ -6,22 +6,14 @@ import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
 import img7 from "../assets/7.png";
 
-import AutoApp from "../assets/autosksite.png";
-import BlogApp from "../assets/blog.png";
-import CalculatorApp from "../assets/Calculator.png";
 import EcommerceNextApp from "../assets/ecommerce.png";
 import EcommerceApp from "../assets/ecoomerce.png";
 import Prl from "../assets/prl.png";
 import ExpensesApp from "../assets/exp.png";
 import FoodOrderApp from "../assets/foodorder.png";
-import GuessNumberApp from "../assets/guessnumber.png";
 import NetflixApp from "../assets/netlfixcl.png";
-import PigGameApp from "../assets/pigame.png";
 import PlacesApp from "../assets/places.png";
 import Job from "../assets/job.png";
-import SocialMediaApp from "../assets/scm.png";
-import SocialNetworkApp from "../assets/socnet.png";
-import YtApp from "../assets/ytu.png";
 
 export const logos = [
   {
@@ -75,7 +67,7 @@ export const projects = [
     site: "https://ecommerce-react-dun.vercel.app/",
   },
   {
-    id: 24,
+    id: 2,
     image: Job,
     title: "Job Search Application",
     description:
@@ -85,25 +77,17 @@ export const projects = [
     site: "https://job-searching-app-omega.vercel.app/",
   },
   {
-    id: 2,
-    image: EcommerceNextApp,
-    title: "Ecommerce Application",
-    description:
-      "A Next.js ecommerce app is a full-stack web application that enables businesses to sell products and services online.",
-    technologies: ["Next Js", "MongoDB"],
-    github: "https://github.com/Dzenoo/Ecommerce_app",
-  },
-  {
     id: 3,
-    image: PlacesApp,
-    title: "Social Media Application",
+    image: Prl,
+    title: "Programming Learning Application",
     description:
-      "This app allows users to discover and share their favorite places around the world.",
-    technologies: ["React Js", "Node Js", "MongoDB"],
-    github: "https://github.com/Dzenoo/MERN-application",
+      "Programming Learning Application, that provides much features. Browsing challenges, earn xp, and level up. Get more achievements and get first on leaderboard.",
+    technologies: ["React", "Node", "Express", "MongoDB"],
+    github: "https://github.com/Dzenoo/Programming-Learning-Platform",
+    site: "https://programming-learning-platform.vercel.app/home",
   },
   {
-    id: 5,
+    id: 4,
     image: FoodOrderApp,
     title: "Food Order Application",
     description:
@@ -113,66 +97,25 @@ export const projects = [
     site: "https://food-order-app-omega-wheat.vercel.app/",
   },
   {
-    id: 6,
-    image: SocialNetworkApp,
-    title: "Social Network Application",
+    id: 5,
+    image: EcommerceNextApp,
+    title: "Ecommerce Application",
     description:
-      "Social Network application, build with vanilla Js, API, and with features: Comments, Likes, Posts, Authentication",
-    technologies: ["JavaScript", "Html", "Css"],
-    github: "https://github.com/Dzenoo/Social-Network",
-  },
-  {
-    id: 8,
-    image: Prl,
-    title: "Programming Learning Application",
-    description:
-      "Programming Learning Application, that provides much features. Browsing challenges, earn xp, and level up. Get more achievements and get first on leaderboard.",
-    technologies: ["React", "Node", "Express", "MongoDB"],
-    github: "https://github.com/Dzenoo/Programming-Learning-Platform",
-    site: "https://programming-learning-platform.vercel.app/home",
-  },
-  // {
-  //   id: 9,
-  //   image: GuessNumberApp,
-  //   title: "Guess Number Game",
-  //   description:
-  //     "It's a classic game where one player thinks of a number between a chosen range and the other player has to guess what the number is. ",
-  //   technologies: ["JavaScript", "Html", "Css"],
-  //   github: "https://github.com/Dzenoo/Guess-number",
-  // },
-  {
-    id: 10,
-    image: CalculatorApp,
-    title: "Calculator App",
-    description:
-      "A calculator app is a software application designed to perform mathematical calculations.",
-    technologies: ["React Js", "Css"],
-    github: "https://github.com/Dzenoo/Calculator_React",
-    site: "https://calculator-react-orcin.vercel.app/",
-  },
-  {
-    id: 11,
-    image: AutoApp,
-    title: "Driving School Website",
-    description:
-      "A website for a driving school that provides information about the courses they offer, pricing, scheduling, and the ability to book lessons",
-    technologies: ["JavaScript", "Html", "Css"],
-    github: "https://github.com/Dzenoo/Arizona2018",
-    site: "https://arizona2018.com/",
-  },
-
-  {
-    id: 13,
-    image: BlogApp,
-    title: "Blog Application",
-    description:
-      "A software application that allows users to read, and share blog posts. It typically includes a user interface for reading posts,",
+      "A Next.js ecommerce app is a full-stack web application that enables businesses to sell products and services online.",
     technologies: ["Next Js", "MongoDB"],
-    github: "https://github.com/Dzenoo/Blog-app",
-    site: "https://www.monetizenp.com/",
+    github: "https://github.com/Dzenoo/Ecommerce_app",
   },
   {
-    id: 14,
+    id: 6,
+    image: PlacesApp,
+    title: "Social Media Application",
+    description:
+      "This app allows users to discover and share their favorite places around the world.",
+    technologies: ["React Js", "Node Js", "MongoDB"],
+    github: "https://github.com/Dzenoo/MERN-application",
+  },
+  {
+    id: 9,
     image: ExpensesApp,
     title: "Expenses Application",
     description:
@@ -181,18 +124,8 @@ export const projects = [
     github: "https://github.com/Dzenoo/Expenses-app",
     site: "https://expenses-7sdxftso0-dzenoo.vercel.app/",
   },
-
   {
-    id: 16,
-    image: YtApp,
-    title: "Youtube Clone ",
-    description:
-      "A website or app that emulates the functionality of YouTube, allowing users to upload, watch, and share videos.",
-    technologies: ["React Js", "Sass"],
-    github: "https://github.com/Dzenoo/Youtube-Clone",
-  },
-  {
-    id: 17,
+    id: 10,
     image: NetflixApp,
     title: "Netflix Clone",
     description:
