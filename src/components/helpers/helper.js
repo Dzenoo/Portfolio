@@ -6,7 +6,6 @@ import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
 import img7 from "../assets/7.png";
 import img8 from "../assets/nextjs.png";
-
 import EcommerceNextApp from "../assets/ecommerce.png";
 import EcommerceApp from "../assets/ecoomerce.png";
 import Prl from "../assets/prl.png";
@@ -15,7 +14,6 @@ import FoodOrderApp from "../assets/foodorder.png";
 import NetflixApp from "../assets/netlfixcl.png";
 import PlacesApp from "../assets/places.png";
 import Job from "../assets/job.png";
-
 export const logos = [
   {
     image: img3,
