@@ -103,6 +103,7 @@
   transition: 0.3s;
 }
 
+
 @keyframes textAbout {
   0% {
     transform: translateX(-60px);
