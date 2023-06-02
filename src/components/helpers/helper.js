@@ -14,6 +14,7 @@ import FoodOrderApp from "../assets/foodorder.png";
 import NetflixApp from "../assets/netlfixcl.png";
 import PlacesApp from "../assets/places.png";
 import Job from "../assets/job.png";
+import SocialNetwork from "../assets/scn.png";
 
 export const logos = [
   {
@@ -60,6 +61,16 @@ export const text3 =
   "With a passion for solving complex problems and a deep understanding of the latest web development practices, I bring a wealth of knowledge and expertise to every project I work on.";
 
 export const projects = [
+  {
+    id: 12,
+    image: SocialNetwork,
+    title: "Social Network Application",
+    description:
+      "SocialNetApp is a dynamic social networking application that I developed as an open-source project for my portfolio. It offers a comprehensive set of features designed to enhance online social experiences and foster meaningful connections among users.",
+    technologies: ["React Js", "Nextjs", "Node Js", "MongoDB"],
+    github: "https://github.com/Dzenoo/Next-js-13-Social-Media-App",
+    site: "https://next-js-13-social-media-app.vercel.app/",
+  },
   {
     id: 1,
     image: EcommerceApp,
