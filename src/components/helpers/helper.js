@@ -69,7 +69,7 @@ export const projects = [
       "SocialNetApp is a dynamic social networking application that I developed as an open-source project for my portfolio. It offers a comprehensive set of features designed to enhance online social experiences and foster meaningful connections among users.",
     technologies: ["React Js", "Nextjs", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/Next-js-13-Social-Media-App",
-    site: "https://next-js-13-social-media-app.vercel.app/",
+    site: "https://main--poetic-marshmallow-170b5f.netlify.app/",
   },
   {
     id: 1,
