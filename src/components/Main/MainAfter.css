@@ -103,6 +103,9 @@
   transition: 0.3s;
 }
 
+.mui_logo {
+  transition: 0.3s;
+}
 
 @keyframes textAbout {
   0% {

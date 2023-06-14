@@ -6,6 +6,7 @@ import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
 import img7 from "../assets/7.png";
 import img8 from "../assets/nextjs.png";
+import img9 from "../assets/mui.png";
 import EcommerceNextApp from "../assets/ecommerce.png";
 import EcommerceApp from "../assets/ecoomerce.png";
 import Prl from "../assets/prl.png";
@@ -50,6 +51,10 @@ export const logos = [
   {
     image: img8,
     className: "next_logo",
+  },
+  {
+    image: img9,
+    className: "mui_logo",
   },
 ];
 
