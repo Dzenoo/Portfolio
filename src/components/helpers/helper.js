@@ -16,6 +16,7 @@ import NetflixApp from "../assets/netlfixcl.png";
 import PlacesApp from "../assets/places.png";
 import Job from "../assets/job.png";
 import SocialNetwork from "../assets/scn.png";
+import Task from "../assets/task.png";
 
 export const logos = [
   {
@@ -66,6 +67,16 @@ export const text3 =
   "With a passion for solving complex problems and a deep understanding of the latest web development practices, I bring a wealth of knowledge and expertise to every project I work on.";
 
 export const projects = [
+  {
+    id: 16,
+    image: Task,
+    title: "Project Management Tool",
+    description:
+      "Project Management Tool is a dynamic tool that I developed as an open-source project for my portfolio. It offers a comprehensive set of features designed to enhance online management experiences and foster meaningful connections among users.",
+    technologies: ["React Js", "Nextjs", "Node Js", "MongoDB"],
+    github: "https://github.com/Dzenoo/Project-Management-Tool",
+    site: "https://github.com/Dzenoo/Project-Management-Tool",
+  },
   {
     id: 12,
     image: SocialNetwork,
