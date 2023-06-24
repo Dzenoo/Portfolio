@@ -75,7 +75,7 @@ export const projects = [
       "Project Management Tool is a dynamic tool that I developed as an open-source project for my portfolio. It offers a comprehensive set of features designed to enhance online management experiences and foster meaningful connections among users.",
     technologies: ["React Js", "Nextjs", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/Project-Management-Tool",
-    site: "https://project-management-tool-iota.vercel.app/",
+    site: "https://projectmanagementtool.netlify.app/",
   },
   {
     id: 12,
