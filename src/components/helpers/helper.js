@@ -17,6 +17,7 @@ import PlacesApp from "../assets/places.png";
 import Job from "../assets/job.png";
 import SocialNetwork from "../assets/scn.png";
 import Task from "../assets/task.png";
+import Learning from "../assets/learning.png";
 
 export const logos = [
   {
@@ -78,12 +79,22 @@ export const projects = [
     site: "https://projectmanagementtool.netlify.app/",
   },
   {
+    id: 17,
+    image: Learning,
+    title: "Online Learning App",
+    description:
+      "Online Learning App is application that I developed as an open-source project for my portfolio. It offers a comprehensive set of features designed to enhance online learning experiences and foster meaningful connections among students.",
+    technologies: ["Typescript", "Nextjs", "Node Js", "MongoDB"],
+    github: "https://github.com/Dzenoo/Online-Learning-Platform",
+    site: "",
+  },
+  {
     id: 12,
     image: SocialNetwork,
     title: "Social Network Application",
     description:
       "SocialNetApp is a dynamic social networking application that I developed as an open-source project for my portfolio. It offers a comprehensive set of features designed to enhance online social experiences and foster meaningful connections among users.",
-    technologies: ["React Js", "Nextjs", "Node Js", "MongoDB"],
+    technologies: ["Typescript", "Nextjs", "Node Js", "MongoDB"],
     github: "https://github.com/Dzenoo/Next-js-13-Social-Media-App",
     site: "https://main--cozy-belekoy-37032c.netlify.app/",
   },
